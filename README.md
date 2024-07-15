@@ -30,7 +30,7 @@ commands. You may also need to run these commands as root/via sudo.
 First, you should back up the current boot sector:
 
 ```sh
-dd count=512 if=<device> of=backup.img
+dd bs=512 count=1 if=<device> of=backup.img
 ```
 
 Then, copy the boot sector to the bootable medium:
